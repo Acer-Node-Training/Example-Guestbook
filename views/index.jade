@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1 GuestBook
+	a(href='/post') Leave Message
+
+	hr
+
+	- for (var index in messages)
+		div #{messages[index].name}
+		div #{messages[index].msg}
+		hr

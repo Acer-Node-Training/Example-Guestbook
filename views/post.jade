@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	h1 GuestBook
+	a(href='/') Home
+
+	form(action='/post', method='post')
+		div NAME
+		input(type='text', name='name')
+		div MESSAGE
+		textarea(name='msg', style='width: 200px;')
+		br
+		input(type='submit', value='POST')
+
